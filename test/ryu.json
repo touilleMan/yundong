@@ -1,0 +1,48 @@
+{
+	"sprite": {
+		"name": "ryu",
+		"texture_path": "ryu.gif",
+		"animations": [
+			{
+				"name": "idle",
+				"frames": [
+					{
+						"texture_crop_x": "0",
+						"texture_crop_y": "0",
+						"texture_crop_width": "40",
+						"texture_crop_height": "100",
+						"time": "100"
+					},
+					{
+						"texture_crop_x": "70",
+						"texture_crop_y": "0",
+						"texture_crop_width": "40",
+						"texture_crop_height": "100",
+						"time": "100"
+					},
+					{
+						"texture_crop_x": "130",
+						"texture_crop_y": "0",
+						"texture_crop_width": "40",
+						"texture_crop_height": "100",
+						"time": "100"
+					},
+					{
+						"texture_crop_x": "200",
+						"texture_crop_y": "0",
+						"texture_crop_width": "40",
+						"texture_crop_height": "100",
+						"time": "100"
+					},
+					{
+						"texture_crop_x": "260",
+						"texture_crop_y": "0",
+						"texture_crop_width": "40",
+						"texture_crop_height": "100",
+						"time": "100"
+					}
+				]
+			}
+		]
+	}
+}
