@@ -10,16 +10,16 @@ class Frame:
     @classmethod
     def load(self, conf, texture):
         frame = Frame()
-        frame.time = conf['time']
-        frame.__texture_crop = {'x': conf['texture_crop_x'],
-                                'y': conf['texture_crop_y'],
-                                'width': conf['texture_crop_width'],
-                                'height': conf['texture_crop_height']}
+        frame.time = int(conf['time'])
+        frame.__texture_crop = {'x': int(conf['texture_crop_x']),
+                                'y': int(conf['texture_crop_y']),
+                                'width': int(conf['texture_crop_width']),
+                                'height': int(conf['texture_crop_height'])}
         frame.texture = texture.copy(frame.__texture_crop['x'],
                                      frame.__texture_crop['y'],
                                      frame.__texture_crop['width'],
                                      frame.__texture_crop['height'])
-        frame.hitboxes = conf['hitboxes']
+        frame.hitboxes = conf.get('hitboxes', [])
         return frame
 
     def save(self):

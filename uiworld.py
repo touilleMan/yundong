@@ -2,8 +2,10 @@ from PySide import QtGui, QtCore
 
 
 class UiWorld(QtGui.QWidget):
+
     """Qt widget representing the world
     """
+
     def __init__(self, parent=None):
         super().__init__(parent)
         self.__last_point = None
@@ -13,7 +15,10 @@ class UiWorld(QtGui.QWidget):
         # Create a timer to refresh the image
         self.timer = QtCore.QTimer(self)
         self.timer.timeout.connect(self.update)
-        self.timer.start(1000/60)
+        self.timer.start(1000 / 60)
+
+    def setImage(self, image):
+        self.image = image
 
     def clear(self):
         self.image.fill(QtCore.Qt.white)
